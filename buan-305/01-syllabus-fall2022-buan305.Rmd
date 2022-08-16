@@ -1,0 +1,238 @@
+---
+title: "BUAN 305 -- Business Analytics Spreadsheet Modeling - Syllabus"
+subtitle: "Foote: Fall 2022 (revised 2022-08-15)"
+header-includes:
+- \usepackage{fancyhdr}
+- \usepackage{tikz}
+- \usepackage{tikz-qtree}
+- \usetikzlibrary{trees}
+- \pagestyle{fancy}
+- \fancyhf{}
+- \fancyhead[CO,CE]{Syllabus - BUAN 305 - Fall 2022}
+- \fancyfoot[LO,LE]{Copyright 2022 William G. Foote}
+- \fancyfoot[CE,CO]{\leftmark}
+- \fancyfoot[RE,RO]{\thepage}
+- \renewcommand{\headrulewidth}{1.25pt}
+- \renewcommand{\footrulewidth}{1pt}
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
+
+\begin{center}
+\begin{tabular}{r | l }
+\hline
+Instructor: &	Bill Foote \\
+Office hours: &	Tuesday and Friday 1230PM-200PM DLS423 \\
+Phone/Text: &	917-767-7980 (mobile)	\\
+Email: &		<wfoote01@manhattan.edu> \\
+Zoom:	& <https://us02web.zoom.us/j/9177677980> \\
+\hline
+\end{tabular}
+\end{center}
+
+## Course description
+
+BUAN 305. Business Analytics Spreadsheet Modeling. 3 Credits.
+
+This course covers examples of descriptive analytics, predictive analytics, and prescriptive analytics. Topics include, data identification, preparation and representation; risk analysis and simulation; project management; decision analysis; and optimization. The course provides a balance between understanding processes for analytical modeling and developing the tools to represent and solve decision making problems. It introduces students to the fundamental concepts and tools needed to understand the emerging role of business analytics in organizations and shows students how to apply basic business analytics tools in a spreadsheet environment, and how to communicate with analytics professionals to effectively use and interpret analytic models and results for making better business decision[s]. Emphasis is placed on applications, concepts and interpretation of results. Prerequisites: BUAN 227.
+
+
+This course formulates and solves problems to inform decision-makers within organizations using simulation and optimization. Students will develop the skills and practice the techniques to structure and analyze a wide range of complex business problems to inform and support managerial decision-making in functional business application areas such as finance (e.g., capital budgeting, cash planning, portfolio optimization, valuing options, hedging investments), marketing (e.g., pricing, sales force allocation, planning advertising budgets) and operations (e.g., production planning, workforce scheduling, facility location, project management). Spreadsheets are used to assist in modeling, analysis, and commmnication of results and findings.
+
+## Premise and manifesto
+
+The premise of this course is that all decisions arise from some sort of change in the organizational eco-system, internal and external. When change occurs we must learn what to do next. But _learning is inference_. Learning can be reading, discussing,  understanding, reflecting whether in our heads or with complex computing environments and always connected with relevant others in and outside of the organization. 
+
+We begin with the following chain of reasoning:
+
+- In general there are two kinds of intelligibility (we might feature this as modeling): deterministic (what certainly has happened) and statistical (what we don't know, haven't modeled, can not as yet, or ever, observe).
+
+- All events, and data collected from events, have a truth value. Probability is the strength of plausibility of a truth value.
+
+- Inference is a process of attaining justified true belief, otherwise called knowledge; learning is inference. But it is of two kinds: deterministic (deductive: if $x=2$, then $x+2=4$) and statistical (inductive and abductive: if it is plausible that $1 \leq x \leq 3$, this it is plausible that $x+2=4$ because $3 \leq x+2 \leq 5$). We might even call plausibility a variant of reasonabiity.
+
+- Justification derives from strength of plausibility, that is, the probability distribution of a hypothesis conditional on the data and any background, prior, and assumptive knowledge.
+
+- The amount of surprise, or informativeness, of the probability distribution of data given our experiences, is the criterion for statistical decision making -- it is the divergence between what we known to be true and what we find out to be true.
+
+- All decisions are choices, and there must be two choices. One choice is at least just stand pat, endure the current situation. The other choice is at least to do something different than business as usual. Thus doing nothing means it is plausible that choice is reasonable, based on justified true belief.
+
+### Surprise, outliers and disruption
+
+All statistical analysis, reasoning within analysis, and informing of decision alternatives, begin from a disturbance in the status quo. The disturbance is the outlier, the error, the lack of understanding, the inattentiveness to experience, the irrationality of actions that is the inconsistency of knowledge and action based on knowledge. The disturbance can also emanate from outside the organization, as in a major competitive or regulatory or moral disruption.
+
+We are surprised when the divergence between what we used to know and what we come to know is wider than we expected, that is, believed to be true. The analysis of surprise is the core tool of this course. In a state of surprise we achieve insight, the _aha!_ moment of discovery, the _eureka_ of innovation.
+
+The course will boil down to the statistics (minimum, maximum, mean, quantiles, deviations, skewness, kurtosis), the probability that the evidence we have to support any proposition(s) we claim, and the consistency of those claims with decision alternatives. Some notion of a _best_ of currently possible worlds will break into a plausible range of potential decision outcomes. Our choices will then need to transcend the decision model and include the data of priorities and tolerances for risk. The lack of consistency will arise as a bias in the decision, decision maker, as well as the decision making process.
+
+We seek evidence, the strength (for example in decibels, base 10) of our hypothesis or claim to inform a decision. The measure of evidence is the measure of surprise and its complement informativeness of the data, current and underlying, inherent in the claim, and thsu the informativeness inherent in any decision.
+
+### Learning Goals
+
+At the end of this course students can expect to demonstrate progress in meeting the following goals, proposed here as actions with verbs in the imperative mood.
+
+1. **Pose** a researched business question, **model** the causal influences implicit in the question, **simulate** potential causal relationships and counterfactual inferences, and **align** inferences with decison alternatives and their plausible choices.
+
+2. **Deploy** analyses which produce interactive analytical products using an industry-grade computational platform engineered according to a tradition of design principles.
+
+3. Using distributional analysis **summarize** experience and beliefs about data and using  multi-level linear and non-linear models **analyze** the processes that the generated data used to infer potential outcomes to answer business questions. 
+
+4. **Practice** quantitative critical thinking skills through statistical problem solving.
+
+5.	**Understand** the role of the analyst and the analytics process in the decision-making context of complex organizations and their environments.
+
+6.	**Communicate** analytical decision results to decision makers and other consumers of analytical products effectively using interactive tables and graphs.
+
+Learning outcomes from this course are strongly coupled with the programming goals of the School of Business:
+
+1.	Gain experience and expertise in analytical decision making
+
+2.	Develop an understanding of leadership
+
+3.	Demonstrate an understanding of ethical issues in business
+
+4.	Demonstrate an understanding of organizations and the competitive environment
+
+This course will support the attainment of these goals through various group and individual activities throughout our time together this semester. Assignments and other evidence of your work and performance in this course directly align with these goals.
+
+## Materials
+
+### Required texts
+
+There are two required texts for this course available at on-line sources.
+
+1.	William G. Foote 2022. _Informing Decisions Using Spreadsheets_ , [\underline{The textbook is available here}](https://leanpub.com/decision-spreadsheet) from LeanPub. You will have to register at _LeanPub_ to access this text. This online book provides the thinking behind the models and their implementation in spreadsheets. As we proceed through the course this text may well be updated to meet your needs.
+
+2.	Wayne Winston. 2021. _Data Analysis and Business Modeling (Office 2021 and Excel 365)_. Redmond, WA: Microsoft Press.  [\underline{You can access this paperback text here}](https://www.microsoftpressstore.com/store/microsoft-excel-data-analysis-and-business-modeling-9780137613762) for well under USD50 and as an e-book for immediate delivery to your computer. You can download the two part files also at this site (after you register your purchase). This book is an excellent reference every analyst should possess whether using Excel or not.
+
+When reading materials in preparation for class it is essential that you take an active approach. This means that you build the spreadsheets that are being discussed in the textbook and reference book and work through them as you read. When a new method is presented, first repeat the example in the book and then try two or three new examples on your own. In live sessions, as we discuss new applications of the methods presented in the notes and the reference book, I will assume you are familiar with the material in the readings. Finally, you should expect to return to the notes and the book after class or while reviewing, in order to refine and consolidate your knowledge. Your required notebook will document your preparation, questions, and successes.
+
+### Articles and Presentations
+
+From time to time during the course I will assign articles and presentations to highlight concepts, practices, models, and approaches that have worked well for various organizations.
+
+### Online lectures
+
+Several online lectures reside (quite comfortably) in my [\underline{Informing Decisions YouTube channel}](https://www.youtube.com/playlist?list=PLQhA-d1xKdQYhnQZ7yIPW-Nlk_0wI1wie). Read the materials, watch the videos (with others!), take away what you need to meet your learning goals.
+
+### Class, platform and software
+
+This course is delivered as a flipped classroom [^flipped] in-person on campus. This means your responsibility is to read, view, work out problems **prior to class**. In class we will extend, comment on, work through issues and understanding. We will build models together in class in groups. Moodle is the primary platform to integrate these activities, schedules and communications required in the course. Additional live sessions will be scheduled, and recorded, on Zoom.
+
+[^flipped]: By _flipped_ we mean not a lecture. Demonstrations will often take up some our precious class time. But class time is far better spent working issues, problems and extending our understanding of what we read and worked on **prior to class.** [\underline{You can access more information about flipped classrooms here.}](https://bokcenter.harvard.edu/flipped-classrooms) 
+
+The primary computer software platform will be Microsoft Excel 365 with the Solver add-in. The course platform consists of the companion files from Microsoft as well as any file in Moodle. I do not recommend the use of Google Spreadsheets, yet. They often do not support some of the more basic structures of Excel, including the charting object (plots), the pivot table object, and macro recording. 
+
+**THE CIS-BUAN PROGRAM @ M.C. IS A MEMBER OF MICROSOFT’S IMAGINE PREMIUM ACADEMIC INITIATIVE.** Because of this initiative, you can access free downloads of spreadsheet software and a connection to remote desktops from this link: 
+
+\begin{center}
+https://remotely.manhattan.edu/.
+\end{center}
+
+In any case, all workbook submissions must use the Microsoft Excel platform.
+
+## Engagement and performance
+
+_Better to illuminate than merely to shine; to deliver to others contemplated truths than merely to contemplate._ - [Thomas Aquinas, _Summa Theologiae, II- II, q. 188, a. 6_ ](https://www.newadvent.org/summa/3188.htm)
+
+Cultures will eventuate outcomes. The culture of this course is at its root collaborative. We work together to produce outcomes to meet our learning goals. Thus the very first assignment in this course is to form small groups of 2-3 to mirror ideas, frustrations, insights, dead-ends and blind alleys, and share the hopefully more than occasional success.
+
+### Hands-on = success!
+
+This course involves abstract thinking, practical decision making in organizational context, and significant interaction with technology and technique, let alone other people inside and outside of your organization or your group. You can expect that the material, content, process, and deliverables will be challenging and at times frustrating for all of us.  Because the odds of success improve when you are actively engaged, we will employ three distinct strategies to help ensure your success in this course:
+
+1.	Frequent hands-on assignments and projects related to course modules, to help ensure active learning;
+
+2.	Team-based collaborative learning, to foster the exploration of diverse ideas, views, opinions and feedback and to accelerate learning {not required but recommended}; and
+
+3.	Individual demonstrations/presentations that explain the set-up and solution of assigned reading questions and problems, intended to create an environment where you share your thinking processes and insights with your classmates (and incidentally practice presentation skills).
+
+A frequently used peer-learning opportunity will employ regular communication and interactions with your peers. For example, the discussion board can be a vehicle for exchanging views, questions, models, issues, and issue resolution across the class. This will allow the entire class learning community to air differences and similarities in approaches, results, and the development of spread sheet models.
+
+### Assessment of performance
+
+Your grade in this course will depend are your aggregate performance on written case assignments, participation, and final project presentations.  These components are described below. 
+
+1. **_Graded assignments_ include 3 case analyses worth 20% each, totaling 60% of the final grade.**  Each student will be responsible for completing three (3) case assignments These exercises are designed to help you master decision context, data collection, analysis formulation, spreadsheet setup, problem solution and interpretation, and the lucid presentation of your recommendations to a managerial audience. Feel free to complete this assignment as a group. **However, for each assignment, each of you are responsible to upload one copy of your case solution(s) / report in a supporting spreadsheet as appropriate by the date posted in the LMS (Moodle).** The first page of the report should show the name of each team member and the title of the assignment.  Typically, a report will consist of responses to a set of questions which represent the analytical product for each case.  A good solution will provide a well-organized, clearly-written, and well-supported answer for each question. I will assess your case reports and return them to you in about a week. I reserve the right to encourage you with an incentive for you to respond to comments and answer questions I pose to you to complete your assignments.[^Illness]
+
+[^Illness]:  On occasion, an illness or a personal emergency may preclude you from turning in an assignment on time.  In cases of extenuating circumstances, please work directly with me to manage the situation. To help avoid a late submission, I encourage to develop a support group, or team, of up to three students. You are always responsible to submit your own work into the Learning Mmanagement System (we know affectionately as _Moodle_) on time and in full.
+
+2. **_Participation_ includes discussions and skill-building activities worth 20% of the final grade.** There will be several activities including maintenance of a current notebook of your work, spreadsheet construction, brief discussions on concepts and issues, skill-building reading exercises, final project case selections, and other formative activities in each class throughout this short 7 week semester. There is no practical way to make up for these activities. These frequent activities are also a measure of your active attendance and participation. If for reasons beyond your control you cannot participate it is your responsibility to alert me in a timely manner so I can help you manage the situation you face. Other possible contributions include responding to direct questions, presenting skill builder solutions, one-on-one office hours, among other events and their artifacts.[^Notebook]  
+
+[^Notebook]:  Most professionals maintain a hand-written notebook for personal reference and to recall and to reflect on content, participants, and outcomes of meetings, both virtual and in person. The online lectures, exercises and skill-building reading questions are such meetings. During office hours I may inquire about your notebook and if it is current and reflective of the online material. You may use your notebook to scribe information gleaned from the online discussion, your own reading and reflection outside of class, and discussions with your teammates. 
+
+3. **The _Overall Assessment_, based on the final case and presentation is worth 20% of the final grade.** A comprehensive case analysis and presentation will cap the course work. You may choose one of several cases. I strongly advise that you devise your own case based on your interests, background, and experience.
+
+Grades are A-F using the following scale: A: >95%, A- >=90%, < 95%; B+: <90%, >=85%; B: <85%, >=80%; C+: <80%, >=75%; C: <75%, >=70%; D: <70%, >=65%; F: <65%, > 60%.
+
+### Weekly course schedule
+
+The course schedule is on _Moodle_. Here is a summary of the weekly topics.
+
+\begin{center}
+\begin{tabular}{ c | l }
+Week &	Topic \\ 
+\hline
+Weeks 1-2 &	Spreadsheet engineering I: building simple decision models \\
+Weeks 3-4 &	Spreadsheet engineering II: multi-variable sensitivity analysis \\
+Weeks 5-6 &	Optimization I: linear programming decision models \\
+Weeks 7-8 &	Optimization II: multi-period planning and portfolio selection \\
+Week 9-10 &	Simulation I: primordial waiting time \\
+Week 11-12 &	Simulation II: forecasting extreme claims \\
+Week 13-15 &	Compendium: final case preparation and presentation \\
+\hline
+\end{tabular}
+\end{center}
+
+## Academic integrity and analyst conduct
+
+### Academic integrity
+
+The _Manhattan College Academic Integrity Policy_ holds students accountable for the integrity of the work they submit. Students should be familiar with the Policy and know that it is their responsibility to learn about instructor and general academic expectations with regard to proper collection, usage, and citation of sources in written work. The policy also governs the integrity of work submitted in exams and assignments as well as the veracity of signatures on attendance sheets and other verifications of participation in class activities. For more information and the complete policy, see the Manhattan College Catalog.
+
+### Analyst conduct
+
+Here is an example compilation of guidelines for analyst conduct  that follow an analytical cycle of activities we will regularly refer to in the course. To the extent possible we will apply these guidelines to our own work together.
+
+1.	Planning and Direction
+a.	Ensure targeting and collection priorities are proportional to the organization’s interests at stake.
+b.	Use organizational guidance considering potential outliers and anomalies.
+c.	Consider the least intrusive methods first. Open source should be your first resource.
+d.	Recommend that resources be used wisely and anticipate potential consequences in allocating collection requirements.
+e.	Be objective in developing collection requirements.
+
+2.	Collection
+a.	Provide honest and timely feedback to the collector.
+b.	Act responsibly. Do not collect just to collect, collect within the scope of your mission.
+c.	Take care to describe the source properly-be diligent and objective in the source description.
+d.	Protect sources and methods.
+e.	Appropriately scale collection to the immediacy and severity of the threat or opportunity.
+
+3.	Analysis  
+a.	Avoid abuse of access to information.
+b.	Recommend but do not direct.
+c.	Trust but verify-seek the truth, evaluate information, and do your best to corroborate information with other sources; however, do not immediately distrust single-source information.
+d.	Maintain objectivity and avoid politicization.
+e.	Always use alternative analysis and consider the widest possible range of hypotheses.
+f.	Do not misrepresent or overinflate estimates and results in your analysis.
+g.	Do not make policy decisions
+h.	As an analyst, your job includes providing feedback to collectors, accurate and timely results to producers, and support for decision makers
+
+4.	Production
+a.	Be cognizant of the weight that analytical products carry; understand that assessments have influence over policy and decisions, allocations of resources, deployment of resources, and strategic choices and tactical implementation and continuous improvement of strategy.
+b.	Coordinate with the widest possible range of experts before disseminating analytical products.
+c.	Strive to find a balance between quality and timeliness in production - an on-time C product is worth far more than an A product that is too late.
+
+5.	Dissemination
+a.	Speak truth to power -- give the decision maker accurate information rather than what he or she wants to hear.
+b.	Don't stovepipe -- disseminate to the widest possible audience; when in doubt about sharing or disseminating information, seek guidance.
+c.	Always follow your organization's guidelines for appropriate dissemination and release of information.
+
+## Students with disabilities
+
+If you need academic accommodations due to a disability, then you should immediately register with the Director of the Specialized Resource Center (SRC). The SRC at Manhattan College authorizes special accommodations for students with disabilities.  If you have a documented disability and you wish to discuss academic accommodations, please contact the me within the first week of class.
+
+
+
